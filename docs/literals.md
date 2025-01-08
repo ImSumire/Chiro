@@ -1,0 +1,3 @@
+- Integer: `42`, `0x1f`
+- Boolean: `true`, `false`
+- Character: `a`, `!`

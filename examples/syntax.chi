@@ -1,0 +1,30 @@
+; Specs:
+; Registers: 16 * 1-byte
+; Data memory: 256 bytes (1-byte address) 
+; Instruction memory: 2048 bytes (10-bit address, 2 bytes each)
+; Maximum stack depth: 16
+; Reserved memory: 240 to 255 for I/O
+
+; Hardware:
+; Screen: 32 * 32
+; Character display: 10 chars
+; Number display: 1-byte signed or unsigned
+; Input controller: Start | Select | A | B | Up | Right | Down | Left
+
+; Define constants
+const LEFT = 1
+const DOWN = 2
+const RIGHT = 4
+const UP = 8
+const A = 16
+const B = 32
+const SELECT = 64
+
+; Define global registers
+define @x
+define @y
+
+define @main() {
+    entry:
+        halt
+}
